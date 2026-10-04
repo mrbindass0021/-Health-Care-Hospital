@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home | CarePlus Hospital</title><meta name="description" content="CarePlus Hospital - compassionate care, advanced medicine in New Delhi.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"></head>
+<body data-page="index">
+<!-- Navbar, footer, modals, loader and toasts are injected by js/script.js -->
+<main id="top">
+<section class="hero"><div class="container"><div class="hero-text">
+<h1>Compassionate Care. Advanced Medicine.</h1>
+<p>Providing trusted healthcare with experienced doctors, modern technology and patient-first care.</p>
+<a href="appointment.html" class="btn btn-teal btn-lg me-2 mb-2" data-book>Book an Appointment</a>
+<a href="services.html" class="btn btn-outline-light btn-lg mb-2">Explore Our Services</a></div></div></section>
+<section class="quick"><div class="container"><div class="row g-3">
+<div class="col-6 col-lg-3"><div class="qcard"><i class="fa-solid fa-truck-medical"></i><h3>24/7 Emergency</h3><p>Always open, always ready.</p></div></div>
+<div class="col-6 col-lg-3"><div class="qcard"><i class="fa-solid fa-user-doctor"></i><h3>Expert Doctors</h3><p>100+ certified specialists.</p></div></div>
+<div class="col-6 col-lg-3"><div class="qcard"><i class="fa-solid fa-microscope"></i><h3>Advanced Diagnostics</h3><p>MRI, CT, lab and more.</p></div></div>
+<div class="col-6 col-lg-3"><div class="qcard"><i class="fa-solid fa-van-shuttle"></i><h3>Ambulance Service</h3><p>Fast, fully equipped response.</p></div></div>
+</div></div></section>
+<section id="about" class="section"><div class="container"><div class="row align-items-center g-5">
+<div class="col-lg-6 reveal"><img src="images/hospital.jpg" class="img-fluid rounded-4 shadow-soft" alt="CarePlus Hospital building" loading="lazy"></div>
+<div class="col-lg-6 reveal"><span class="eyebrow">Who we are</span><h2>About CarePlus Hospital</h2>
+<p class="text-muted">For over 15 years CarePlus has combined skilled clinicians with modern technology, so every patient gets accurate diagnosis and kind, personal treatment.</p>
+<ul class="check-list"><li>Modern healthcare facilities</li><li>Experienced medical professionals</li><li>Advanced medical equipment</li><li>Patient-focused treatment</li><li>Clean and safe environment</li></ul>
+<div class="row g-3 mt-2 stats"><div class="col-6 col-md-3"><strong>15+</strong><span>Years of Experience</span></div><div class="col-6 col-md-3"><strong>100+</strong><span>Expert Doctors</span></div><div class="col-6 col-md-3"><strong>50K+</strong><span>Happy Patients</span></div><div class="col-6 col-md-3"><strong>25+</strong><span>Departments</span></div></div>
+</div></div></div></section>
+<section id="departments" class="section bg-soft"><div class="container"><div class="text-center mb-5 reveal"><span class="eyebrow">Departments</span><h2>Specialist care under one roof</h2><p class="text-muted mx-auto" style="max-width:600px">Search or browse our departments.</p></div><div class="mb-4 mx-auto" style="max-width:420px"><label for="deptFilter" class="visually-hidden">Filter departments</label><input id="deptFilter" class="form-control form-control-lg" placeholder="Filter departments..."></div><div class="row g-4" id="deptGrid"></div></div></section>
+<section id="doctors" class="section"><div class="container"><div class="text-center mb-5 reveal"><span class="eyebrow">Our Doctors</span><h2>Meet our specialists</h2><p class="text-muted mx-auto" style="max-width:600px">Experienced doctors who put patients first.</p></div><div class="chips mb-4 text-center" id="docChips"></div><div class="row g-4" id="docGrid"></div></div></section>
+<section id="services" class="section bg-soft"><div class="container"><div class="text-center mb-5 reveal"><span class="eyebrow">Services</span><h2>Complete medical services</h2><p class="text-muted mx-auto" style="max-width:600px">From routine checkups to critical care.</p></div><div class="row g-4" id="svcGrid"></div></div></section>
+<section class="emergency"><div class="container text-center"><i class="fa-solid fa-truck-medical pulse"></i><h2>Need Emergency Care?</h2><p>Available 24 hours a day, 7 days a week.</p><a href="tel:112" class="btn btn-light btn-lg fw-semibold"><i class="fa-solid fa-phone me-2"></i>Call Emergency</a><p class="big mt-3 mb-0">Emergency: 112</p></div></section>
+<section id="facilities" class="section"><div class="container"><div class="text-center mb-5 reveal"><span class="eyebrow">Facilities</span><h2>World-class facilities</h2><p class="text-muted mx-auto" style="max-width:600px">Comfortable, hygienic and equipped for every need.</p></div><div class="row g-4" id="facGrid"></div></div></section>
+<section id="appointment" class="section bg-soft"><div class="container"><div class="row justify-content-center"><div class="col-lg-8"><div class="form-card reveal"><h2 class="mb-1">Book an Appointment</h2><p class="text-muted">Fill in the form and our team will confirm your slot.</p><div id="apptHost"></div></div></div></div></div></section>
+<section id="testimonials" class="section bg-soft"><div class="container"><div class="text-center mb-5 reveal"><span class="eyebrow">Testimonials</span><h2>What our patients say</h2><p class="text-muted mx-auto" style="max-width:600px"></p></div><div class="row g-4" id="testGrid"></div></div></section>
+<section id="blog" class="section"><div class="container"><div class="text-center mb-5 reveal"><span class="eyebrow">Health Tips</span><h2>Latest from our doctors</h2><p class="text-muted mx-auto" style="max-width:600px"></p></div><div class="row g-4" id="blogGrid"></div></div></section>
+<section id="contact" class="section"><div class="container"><div class="text-center mb-5 reveal"><span class="eyebrow">Contact</span><h2>Get in touch</h2><p class="text-muted mx-auto" style="max-width:600px"></p></div><div class="row g-4"><div class="col-lg-5"><ul class="contact-list">
+<li><i class="fa-solid fa-location-dot"></i><div><b>Address</b><br>123 Healthcare Avenue, New Delhi, India</div></li>
+<li><i class="fa-solid fa-phone"></i><div><b>Phone</b><br><a href="tel:+919876543210">+91 98765 43210</a></div></li>
+<li><i class="fa-solid fa-envelope"></i><div><b>Email</b><br><a href="mailto:care@careplushospital.com">care@careplushospital.com</a></div></li>
+<li><i class="fa-solid fa-clock"></i><div><b>Opening</b><br>24/7 Emergency Services</div></li></ul></div>
+<div class="col-lg-7"><iframe title="Hospital location map" class="map" loading="lazy" src="https://www.google.com/maps?q=New+Delhi,India&output=embed"></iframe></div></div></div></section>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script></body></html>

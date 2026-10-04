@@ -1,0 +1,93 @@
+/* ===== 1. Theme variables (change colors here) ===== */
+:root{--blue:#0a6ebd;--navy:#083c6e;--teal:#0e9f9a;--soft:#f0f7fb;--text:#1d2b3a;--radius:18px;--shadow:0 8px 28px rgba(8,60,110,.10)}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:var(--text);background:#fff;padding-top:0}
+h1,h2,h3{font-weight:600;color:var(--navy)}
+a{text-decoration:none}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+/* ===== 2. Navbar ===== */
+.navbar{background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.06)}
+.navbar-brand{font-weight:700;color:var(--navy)!important;font-size:1.35rem}
+.navbar-brand i{color:var(--teal);margin-right:.4rem}
+.nav-link{font-weight:500;color:var(--text)!important}
+.nav-link:hover,.nav-link.active{color:var(--blue)!important}
+.btn-teal{background:var(--teal);color:#fff;border:0;border-radius:50px;padding:.55rem 1.4rem;font-weight:500;transition:.25s}
+.btn-teal:hover{background:#0b827e;color:#fff;transform:translateY(-2px);box-shadow:0 6px 16px rgba(14,159,154,.35)}
+.btn-outline-light{border-radius:50px}
+.btn-blue-outline{border:2px solid var(--blue);color:var(--blue);border-radius:50px;font-weight:500}
+.btn-blue-outline:hover{background:var(--blue);color:#fff}
+
+/* ===== 3. Hero ===== */
+.hero{min-height:88vh;display:flex;align-items:center;color:#fff;
+ background:linear-gradient(100deg,rgba(6,38,70,.88),rgba(6,38,70,.45)),url(../images/hospital.jpg) center/cover}
+.hero h1{color:#fff;font-size:clamp(2.2rem,5.5vw,4rem);line-height:1.1;margin-bottom:1rem}
+.hero p{font-size:1.15rem;max-width:560px;margin-bottom:1.8rem;opacity:.95}
+.hero-text{max-width:680px}
+.quick{margin-top:-60px;position:relative;z-index:2}
+.qcard{background:#fff;border-radius:var(--radius);padding:1.6rem;box-shadow:var(--shadow);height:100%;transition:.3s}
+.qcard:hover{transform:translateY(-6px)}
+.qcard i{font-size:2rem;color:var(--teal);margin-bottom:.8rem}
+.qcard h3{font-size:1.05rem}.qcard p{margin:0;font-size:.9rem;color:#667}
+
+/* ===== 4. Generic sections ===== */
+.section{padding:5rem 0}
+.bg-soft{background:var(--soft)}
+.eyebrow{color:var(--teal);font-weight:600;font-size:.9rem}
+.page-banner{background:linear-gradient(120deg,var(--navy),var(--teal));color:#fff;padding:4rem 0}
+.page-banner h1{color:#fff}.page-banner p{margin:0;opacity:.9}
+.shadow-soft{box-shadow:var(--shadow)}
+.check-list{list-style:none;padding:0}
+.check-list li{padding:.3rem 0}
+.check-list li:before{content:"\f00c";font-family:"Font Awesome 6 Free";font-weight:900;color:var(--teal);margin-right:.6rem}
+.stats strong{display:block;font-size:1.8rem;color:var(--blue)}
+.stats span{font-size:.85rem;color:#667}
+
+/* ===== 5. Cards (departments, doctors, services...) ===== */
+.cardx{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:1.6rem;height:100%;transition:.3s;border:1px solid #e7eff5}
+.cardx:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(8,60,110,.18)}
+.icon-box{width:58px;height:58px;border-radius:16px;background:var(--soft);color:var(--blue);display:grid;place-items:center;font-size:1.5rem;margin-bottom:1rem}
+.cardx:hover .icon-box{background:var(--teal);color:#fff}
+.doc img{width:100%;border-radius:14px;margin-bottom:1rem;aspect-ratio:1;object-fit:cover}
+.stars{color:#f5a623}
+.chips .btn{margin:.2rem;border-radius:50px}
+.chips .btn.active{background:var(--blue);color:#fff}
+.fac{border-radius:var(--radius);color:#fff;padding:2.2rem 1.4rem;text-align:center;background:linear-gradient(135deg,var(--blue),var(--teal));transition:.3s;height:100%}
+.fac:hover{transform:scale(1.04)}
+.fac i{font-size:2.2rem;margin-bottom:.8rem}.fac h3{color:#fff;font-size:1.05rem;margin:0}
+.avatar{width:52px;height:52px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:600}
+.blog .thumb{height:170px;border-radius:14px;background:linear-gradient(135deg,var(--blue),var(--teal));display:grid;place-items:center;color:#fff;font-size:2.8rem;margin-bottom:1rem}
+.badge-cat{background:var(--soft);color:var(--blue);font-weight:500}
+
+/* ===== 6. Emergency ===== */
+.emergency{background:linear-gradient(120deg,#b3001b,#e5383b);color:#fff;padding:4rem 0}
+.emergency h2{color:#fff}.emergency .big{font-size:2rem;font-weight:700}
+.emergency>div>i{font-size:3rem;margin-bottom:1rem}
+.pulse{animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+
+/* ===== 7. Forms & contact ===== */
+.form-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:2rem}
+.form-control,.form-select{border-radius:12px;padding:.7rem 1rem}
+.contact-list{list-style:none;padding:0}
+.contact-list li{display:flex;gap:1rem;margin-bottom:1.4rem}
+.contact-list i{width:46px;height:46px;border-radius:50%;background:var(--soft);color:var(--blue);display:grid;place-items:center;flex-shrink:0}
+.map{width:100%;height:340px;border:0;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+/* ===== 8. Footer ===== */
+footer{background:#06284a;color:#b9c9da;padding:4rem 0 1.5rem}
+footer h4{color:#fff;font-size:1.05rem;margin-bottom:1rem}
+footer a{color:#b9c9da;display:block;margin-bottom:.5rem}
+footer a:hover{color:#fff}
+.social a{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.1);margin-right:.4rem}
+.social a:hover{background:var(--teal)}
+
+/* ===== 9. Utilities: loader, back-to-top, reveal ===== */
+#loader{position:fixed;inset:0;background:#fff;display:grid;place-items:center;z-index:3000;transition:opacity .4s}
+#loader.hide{opacity:0;pointer-events:none}
+.spin{width:54px;height:54px;border:5px solid var(--soft);border-top-color:var(--teal);border-radius:50%;animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+#toTop{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;border:0;background:var(--blue);color:#fff;display:none;z-index:900}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s}
+.reveal.show{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
